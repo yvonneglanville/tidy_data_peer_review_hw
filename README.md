@@ -1,4 +1,4 @@
-Instructions for user 
+##  Instructions for user    
 Information neccessary to use this script
 1. Version of RStudio Version 1.0.136 – © 2009-2016 RStudio, Inc.
 2. Packages needed: Stringr, dplyr
