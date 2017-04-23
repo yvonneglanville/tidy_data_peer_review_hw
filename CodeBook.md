@@ -1,7 +1,4 @@
----
-title: "CodeBook"
-output: github_document
----
+
 #### Author: Yvonne Glanville
 
 ##  Code Book
