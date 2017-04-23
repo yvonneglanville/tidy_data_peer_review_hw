@@ -4,7 +4,7 @@ output: github_document
 ---
 #### Author: Yvonne Glanville
 
-## Code Book
+##  Code Book
 
 #### Information neccessary to use the script, run_analysis.R
 #### 1. Version of RStudio Version 1.0.136 – © 2009-2016 RStudio, Inc.
@@ -65,7 +65,7 @@ output: github_document
 "fBodyBodyGyroMag-std()"     
 "fBodyBodyGyroMag-meanFreq()"
 
-##Summary Choices
+##  Summary Choices
 The run_analysis.R script outputs eight .csv files.  In the first six files, the test and training groups are combine, and then the means and standard deviations of the accelerometer and gyroscope data with respect to activity are written to .csv files with the descriptive names as shown "WalkingData.csv", "WalkingUpstairsData.csv", "WalkingDownstairsData.csv", "SittingData.csv", "StandingData.csv", LayingData.csv", 
 Finally, the file, "TestANDTrainData.csv", which contains all data on means and standard deviations for all activities for both the test and training groups is output along with a summary of the means for each column based on activity, "summaryofData.csv".
 
