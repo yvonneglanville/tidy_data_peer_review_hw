@@ -182,3 +182,5 @@ write.csv(TestANDTrainData, "TestANDTrainData.csv")
 ## summary of means for all tidy data
 write.csv(summaryofData, "summaryofData.csv")
 
+write.table(TestANDTrainData, "TestANDTrainData.txt")
+write.table(summaryofData, "summaryofData.txt")
