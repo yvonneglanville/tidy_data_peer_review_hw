@@ -62,6 +62,21 @@
 "fBodyBodyGyroMag-std()"     
 "fBodyBodyGyroMag-meanFreq()"
 
+## Processes in the script
+Once the user sets the working directory, which houses the UCI HAR Dataset files
+the first file read into RStudio is teh features file which lists the clumn names.
+The column names are converted from factor to character and stored in a vector for 
+later use.  Since the participants were grouped as either test subjects or training 
+subjects, and therefore had separate file folders the following processes were completed 
+twice, once for the test data and once for the training data. The data, X_test(X_train),
+subject data, subject_test, and the activity code information was read in was using read.table.
+Descriptive column names were added and the the files bound together. Columns, which gave means 
+and standard deviations were selected as the variables of interest. Once one test and train 
+data frames were created they were bound together to create one complete data frame TestANDTrainData,
+which were output along with a summary of the means for each column grouped by activity. Also, for
+completeness data was also output by activity.
+
+
 ##  Summary Choices
 The run_analysis.R script outputs eight .csv files.  In the first six files, the test and training groups are combine, and then the means and standard deviations of the accelerometer and gyroscope data with respect to activity are written to .csv files with the descriptive names as shown "WalkingData.csv", "WalkingUpstairsData.csv", "WalkingDownstairsData.csv", "SittingData.csv", "StandingData.csv", LayingData.csv", 
 Finally, the file, "TestANDTrainData.csv", which contains all data on means and standard deviations for all activities for both the test and training groups is output along with a summary of the means for each column based on activity, "summaryofData.csv".
